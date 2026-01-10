@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lex-flow.com/sitemap.xml
