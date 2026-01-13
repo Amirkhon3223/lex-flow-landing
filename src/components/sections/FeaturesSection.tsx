@@ -1,20 +1,19 @@
 import { Card } from "../ui/card";
-import { Badge } from "../ui/badge";
 import { Users, FolderOpen, FileText, Calendar, BarChart3, Brain } from "lucide-react";
+import { useI18n } from "@/i18n/I18nContext";
 
 export function FeaturesSection() {
+  const { t } = useI18n();
+
   return (
     <section className="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white" id="features">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-20">
-          <Badge className="bg-green-100 text-green-700 border-green-200 px-4 py-1.5 text-sm font-medium mb-6">
-            Всё в одном месте
-          </Badge>
           <h2 className="text-4xl lg:text-5xl mb-6 font-bold tracking-tight">
-            Вся работа юриста — одна платформа
+            {t("features.title")}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            От первого звонка клиента до закрытия дела — всё под контролем
+            {t("features.subtitle")}
           </p>
         </div>
 
@@ -25,10 +24,10 @@ export function FeaturesSection() {
               <Users className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl mb-4 font-semibold">
-              Клиенты
+              {t("features.clients")}
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Карточки клиентов с контактами, историей и всеми делами в одном месте
+              {t("features.clientsDesc")}
             </p>
           </Card>
 
@@ -38,10 +37,10 @@ export function FeaturesSection() {
               <FolderOpen className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl mb-4 font-semibold">
-              Кейсы
+              {t("features.cases")}
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Дела с задачами, комментариями и важными датами. Удобная структура по клиентам
+              {t("features.casesDesc")}
             </p>
           </Card>
 
@@ -51,10 +50,10 @@ export function FeaturesSection() {
               <FileText className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl mb-4 font-semibold">
-              Документы
+              {t("features.documents")}
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Полная версионность с diff. Видишь каждое изменение — как в GitHub
+              {t("features.documentsDesc")}
             </p>
           </Card>
 
@@ -64,10 +63,10 @@ export function FeaturesSection() {
               <Calendar className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl mb-4 font-semibold">
-              Календарь
+              {t("features.calendar")}
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Даты судов, встречи с клиентами, дедлайны — всё в едином календаре
+              {t("features.calendarDesc")}
             </p>
           </Card>
 
@@ -77,10 +76,10 @@ export function FeaturesSection() {
               <BarChart3 className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl mb-4 font-semibold">
-              Аналитика
+              {t("features.analytics")}
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Статистика по делам, клиентам, документам. Понимай свою практику
+              {t("features.analyticsDesc")}
             </p>
           </Card>
 
@@ -90,10 +89,10 @@ export function FeaturesSection() {
               <Brain className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl mb-4 font-semibold">
-              AI-помощник
+              {t("features.ai")}
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Анализ документов, поиск рисков, судебная практика, рекомендации
+              {t("features.aiDesc")}
             </p>
           </Card>
         </div>

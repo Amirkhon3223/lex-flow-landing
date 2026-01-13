@@ -1,8 +1,11 @@
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { ArrowRight, FolderOpen, Users, FileText, ChevronRight } from "lucide-react";
+import { useI18n } from "@/i18n/I18nContext";
 
 export function HeroSection() {
+  const { t } = useI18n();
+
   return (
     <section className="relative overflow-hidden pt-32 pb-24 lg:pt-40 lg:pb-32">
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 via-purple-50/30 to-transparent"></div>
@@ -10,32 +13,32 @@ export function HeroSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <div className="text-center max-w-4xl mx-auto mb-16 space-y-8">
           <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 px-4 py-1.5 text-sm font-medium hover:shadow-lg transition-all">
-            Вся юридическая практика в одном месте
+            {t("hero.badge")}
           </Badge>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl tracking-tight leading-[1.1] font-bold">
-            Организуй работу{" "}
+            {t("hero.title1")}{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              как профессионал
+              {t("hero.title2")}
             </span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Клиенты, дела, документы с версионностью, календарь и аналитика — всё под контролем
+            {t("hero.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button variant="dark" size="xl">
-              Попробовать LexFlow
+              {t("hero.cta")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="outline-scale" size="xl">
-              Смотреть демо
+              {t("hero.demo")}
             </Button>
           </div>
 
           <p className="text-sm text-gray-500 font-medium">
-            Без кредитной карты • Настройка за 2 минуты
+            {t("hero.noCreditCard")}
           </p>
         </div>
 
@@ -48,8 +51,8 @@ export function HeroSection() {
                 <FolderOpen className="h-6 w-6 text-white" />
               </div>
               <div className="flex-1">
-                <span className="font-semibold text-lg">Структура работы</span>
-                <p className="text-sm text-gray-500">Клиент → Кейс → Документы</p>
+                <span className="font-semibold text-lg">{t("hero.structure")}</span>
+                <p className="text-sm text-gray-500">{t("hero.structureSubtitle")}</p>
               </div>
             </div>
 
@@ -59,10 +62,10 @@ export function HeroSection() {
                 <div className="h-12 w-12 rounded-xl bg-blue-600 flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Клиенты</h3>
-                <p className="text-sm text-gray-600 mb-4">Все контакты и информация</p>
+                <h3 className="text-lg font-semibold mb-2">{t("hero.clients")}</h3>
+                <p className="text-sm text-gray-600 mb-4">{t("hero.clientsDesc")}</p>
                 <div className="flex items-center gap-2 text-sm text-blue-600 font-medium">
-                  <span>5 активных</span>
+                  <span>{t("hero.clientsCount")}</span>
                   <ChevronRight className="h-4 w-4" />
                 </div>
               </div>
@@ -72,10 +75,10 @@ export function HeroSection() {
                 <div className="h-12 w-12 rounded-xl bg-purple-600 flex items-center justify-center mb-4">
                   <FolderOpen className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Кейсы</h3>
-                <p className="text-sm text-gray-600 mb-4">Дела каждого клиента</p>
+                <h3 className="text-lg font-semibold mb-2">{t("hero.cases")}</h3>
+                <p className="text-sm text-gray-600 mb-4">{t("hero.casesDesc")}</p>
                 <div className="flex items-center gap-2 text-sm text-purple-600 font-medium">
-                  <span>12 дел в работе</span>
+                  <span>{t("hero.casesCount")}</span>
                   <ChevronRight className="h-4 w-4" />
                 </div>
               </div>
@@ -85,10 +88,10 @@ export function HeroSection() {
                 <div className="h-12 w-12 rounded-xl bg-green-600 flex items-center justify-center mb-4">
                   <FileText className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Документы</h3>
-                <p className="text-sm text-gray-600 mb-4">С версионностью и diff</p>
+                <h3 className="text-lg font-semibold mb-2">{t("hero.documents")}</h3>
+                <p className="text-sm text-gray-600 mb-4">{t("hero.documentsDesc")}</p>
                 <div className="flex items-center gap-2 text-sm text-green-600 font-medium">
-                  <span>48 документов</span>
+                  <span>{t("hero.documentsCount")}</span>
                   <ChevronRight className="h-4 w-4" />
                 </div>
               </div>

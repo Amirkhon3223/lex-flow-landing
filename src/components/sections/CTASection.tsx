@@ -1,7 +1,10 @@
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import { useI18n } from "@/i18n/I18nContext";
 
 export function CTASection() {
+  const { t } = useI18n();
+
   return (
     <section className="py-32 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
@@ -12,24 +15,24 @@ export function CTASection() {
 
       <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center relative">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl mb-8 font-bold tracking-tight leading-tight">
-          Организуй свою практику как профессионал
+          {t("cta.title")}
         </h2>
         <p className="text-xl sm:text-2xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Клиенты, дела, документы, календарь — всё в одном месте. Попробуй LexFlow бесплатно
+          {t("cta.subtitle")}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button variant="light" size="2xl">
-            Попробовать бесплатно
+            {t("cta.try")}
             <ArrowRight className="ml-2 h-6 w-6" />
           </Button>
           <Button variant="outline-white" size="2xl">
-            Смотреть демо
+            {t("cta.demo")}
           </Button>
         </div>
 
         <p className="text-sm text-blue-200 mt-8 font-medium">
-          Без кредитной карты • Настройка за 2 минуты • Отмени в любой момент
+          {t("cta.footer")}
         </p>
       </div>
     </section>

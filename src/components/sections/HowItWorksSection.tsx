@@ -1,16 +1,16 @@
 import { Users, FolderOpen, FileText, Zap } from "lucide-react";
+import { useI18n } from "@/i18n/I18nContext";
 
 export function HowItWorksSection() {
+  const { t } = useI18n();
+
   return (
     <section className="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl mb-6 font-bold tracking-tight">
-            Как это работает
+            {t("howItWorks.title")}
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Простой workflow от клиента до закрытия дела
-          </p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -24,10 +24,10 @@ export function HowItWorksSection() {
               <Users className="h-10 w-10 text-blue-600" />
             </div>
             <h3 className="text-xl mb-3 font-semibold">
-              Создай клиента
+              {t("howItWorks.step1")}
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Добавь карточку клиента с контактами
+              {t("howItWorks.step1Desc")}
             </p>
           </div>
 
@@ -41,10 +41,10 @@ export function HowItWorksSection() {
               <FolderOpen className="h-10 w-10 text-purple-600" />
             </div>
             <h3 className="text-xl mb-3 font-semibold">
-              Открой кейс
+              {t("howItWorks.step2")}
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Создай дело для клиента с описанием
+              {t("howItWorks.step2Desc")}
             </p>
           </div>
 
@@ -58,10 +58,10 @@ export function HowItWorksSection() {
               <FileText className="h-10 w-10 text-green-600" />
             </div>
             <h3 className="text-xl mb-3 font-semibold">
-              Загрузи документы
+              {t("howItWorks.step3")}
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Добавь договоры с автоверсионностью
+              {t("howItWorks.step3Desc")}
             </p>
           </div>
 
@@ -75,10 +75,10 @@ export function HowItWorksSection() {
               <Zap className="h-10 w-10 text-orange-600" />
             </div>
             <h3 className="text-xl mb-3 font-semibold">
-              Работай спокойно
+              {t("howItWorks.step4")}
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Всё под контролем в одном месте
+              {t("howItWorks.step4Desc")}
             </p>
           </div>
         </div>
