@@ -28,13 +28,17 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button variant="dark" size="xl">
-              {t("hero.cta")}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline-scale" size="xl">
-              {t("hero.demo")}
-            </Button>
+            <a href="https://app.lex-flow.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="dark" size="xl">
+                {t("hero.cta")}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+            {/* <a href="https://app.lex-flow.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline-scale" size="xl">
+                {t("hero.demo")}
+              </Button>
+            </a> */}
           </div>
 
           <p className="text-sm text-gray-500 font-medium">

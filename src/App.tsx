@@ -1,28 +1,21 @@
+import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
-import { HeroSection } from "./components/sections/HeroSection";
-import { ProblemSection } from "./components/sections/ProblemSection";
-import { FeaturesSection } from "./components/sections/FeaturesSection";
-import { DocumentVersioningSection } from "./components/sections/DocumentVersioningSection";
-import { HowItWorksSection } from "./components/sections/HowItWorksSection";
-import { ForWhomSection } from "./components/sections/ForWhomSection";
-import { PricingSection } from "./components/sections/PricingSection";
-import { TrustSection } from "./components/sections/TrustSection";
-import { CTASection } from "./components/sections/CTASection";
+import { SEOHead } from "./components/SEOHead";
+import { HomePage } from "./pages/HomePage";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { TermsOfService } from "./pages/TermsOfService";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <SEOHead />
       <Header />
-      <HeroSection />
-      <ProblemSection />
-      <FeaturesSection />
-      <DocumentVersioningSection />
-      <HowItWorksSection />
-      <ForWhomSection />
-      <PricingSection />
-      <TrustSection />
-      <CTASection />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+      </Routes>
       <Footer />
     </div>
   );

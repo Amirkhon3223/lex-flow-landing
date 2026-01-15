@@ -1,16 +1,16 @@
 {
   "header": {
     "features": "Features",
+    "howItWorks": "How It Works",
     "pricing": "Pricing",
-    "blog": "Blog",
-    "try": "Try Now"
+    "try": "Get Started"
   },
   "hero": {
     "badge": "Complete legal practice management in one place",
     "title1": "Organize your work",
     "title2": "like a professional",
     "subtitle": "Clients, cases, versioned documents, calendar and analytics — everything under control",
-    "cta": "Try LexFlow",
+    "cta": "Get Started",
     "demo": "Watch Demo",
     "noCreditCard": "No credit card required • 2-minute setup",
     "structure": "Work Structure",
@@ -139,7 +139,7 @@
   "cta": {
     "title": "Organize your practice like a professional",
     "subtitle": "Clients, cases, documents, calendar — all in one place. Try LexFlow for free",
-    "try": "Try for Free",
+    "try": "Get Started",
     "demo": "Watch Demo",
     "footer": "No credit card required • 2-minute setup • Cancel anytime"
   },
@@ -148,13 +148,35 @@
     "copyright": "© 2026 LexFlow. All rights reserved.",
     "features": "Features",
     "pricing": "Pricing",
-    "blog": "Blog",
+    "howItWorks": "How It Works",
     "support": "Support"
+  },
+  "support": {
+    "title": "Contact Us",
+    "subtitle": "Choose your preferred communication channel",
+    "telegramDesc": "Quick communication via Telegram",
+    "openTelegram": "Open Telegram",
+    "whatsappDesc": "Connect via WhatsApp",
+    "openWhatsapp": "Open WhatsApp",
+    "phone": "Phone",
+    "call": "Call Us",
+    "email": "Email",
+    "sendEmail": "Send Email",
+    "workingHours": "We're online from 9:00 AM to 6:00 PM (GMT+5)"
   },
   "language": {
     "select": "Select language",
     "ru": "Русский",
     "en": "English",
     "tj": "Тоҷикӣ"
+  },
+  "seo": {
+    "title": "LexFlow — Legal Practice Management System",
+    "description": "Organize your work like a professional. Clients, cases, versioned documents, calendar and analytics — everything under control. From $7/month.",
+    "keywords": "legal practice management, lawyer CRM, case management software, document versioning, legal tech, law firm software, legal calendar, legal analytics, client management for lawyers, LexFlow, legal document management, law practice software, attorney case management",
+    "ogTitle": "LexFlow — Legal Practice Management System",
+    "ogDescription": "Manage clients, cases, versioned documents, calendar and analytics for lawyers. Try for free!",
+    "twitterTitle": "LexFlow — Legal Practice Management System",
+    "twitterDescription": "Manage clients, cases, versioned documents, calendar and analytics for lawyers. Try for free!"
   }
 }
