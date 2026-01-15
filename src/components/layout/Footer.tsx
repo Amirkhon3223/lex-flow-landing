@@ -28,17 +28,17 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-base mb-4 font-semibold">Продукт</h4>
+            <h4 className="text-white text-base mb-4 font-semibold">{t("footer.product")}</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#features" className="hover:text-white transition-colors">{t("footer.features")}</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">{t("footer.pricing")}</a></li>
+              <li><a href="/#features" className="hover:text-white transition-colors">{t("footer.features")}</a></li>
+              <li><a href="/#how-it-works" className="hover:text-white transition-colors">{t("footer.howItWorks")}</a></li>
+              <li><a href="/#pricing" className="hover:text-white transition-colors">{t("footer.pricing")}</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white text-base mb-4 font-semibold">Компания</h4>
+            <h4 className="text-white text-base mb-4 font-semibold">{t("footer.company")}</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#how-it-works" className="hover:text-white transition-colors">{t("footer.howItWorks")}</a></li>
               <li>
                 <button
                   onClick={() => setIsSupportModalOpen(true)}
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-base mb-4 font-semibold">Юридическое</h4>
+            <h4 className="text-white text-base mb-4 font-semibold">{t("footer.legal")}</h4>
             <ul className="space-y-3 text-sm">
               <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
