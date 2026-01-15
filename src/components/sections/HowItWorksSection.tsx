@@ -5,7 +5,7 @@ export function HowItWorksSection() {
   const { t } = useI18n();
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
+    <section id="how-it-works" className="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl mb-6 font-bold tracking-tight">

@@ -31,9 +31,11 @@ export function PricingSection() {
               <p className="text-sm text-gray-600">{t("pricing.basicYear")}</p>
             </div>
 
-            <Button variant="outline" size="full" className="mb-8">
-              {t("pricing.basicCta")}
-            </Button>
+            <a href="https://app.lex-flow.com" target="_blank" rel="noopener noreferrer" className="block">
+              <Button variant="outline" size="full" className="mb-8">
+                {t("pricing.basicCta")}
+              </Button>
+            </a>
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
@@ -84,9 +86,11 @@ export function PricingSection() {
               <p className="text-sm text-blue-100">{t("pricing.proYear")}</p>
             </div>
 
-            <Button variant="light-colored" size="full" className="mb-8">
-              {t("pricing.proCta")}
-            </Button>
+            <a href="https://app.lex-flow.com" target="_blank" rel="noopener noreferrer" className="block">
+              <Button variant="light-colored" size="full" className="mb-8">
+                {t("pricing.proCta")}
+              </Button>
+            </a>
 
             <div className="space-y-4 text-white mb-8">
               <div className="flex items-start gap-3">
@@ -131,9 +135,11 @@ export function PricingSection() {
               <p className="text-sm text-gray-600">{t("pricing.proMaxYear")}</p>
             </div>
 
-            <Button variant="outline" size="full" className="mb-8">
-              {t("pricing.proMaxCta")}
-            </Button>
+            <a href="https://app.lex-flow.com" target="_blank" rel="noopener noreferrer" className="block">
+              <Button variant="outline" size="full" className="mb-8">
+                {t("pricing.proMaxCta")}
+              </Button>
+            </a>
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">

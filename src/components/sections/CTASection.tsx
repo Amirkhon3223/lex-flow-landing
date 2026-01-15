@@ -22,13 +22,17 @@ export function CTASection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Button variant="light" size="2xl">
-            {t("cta.try")}
-            <ArrowRight className="ml-2 h-6 w-6" />
-          </Button>
-          <Button variant="outline-white" size="2xl">
-            {t("cta.demo")}
-          </Button>
+          <a href="https://app.lex-flow.com" target="_blank" rel="noopener noreferrer">
+            <Button variant="light" size="2xl">
+              {t("cta.try")}
+              <ArrowRight className="ml-2 h-6 w-6" />
+            </Button>
+          </a>
+          {/* <a href="https://app.lex-flow.com" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline-white" size="2xl">
+              {t("cta.demo")}
+            </Button>
+          </a> */}
         </div>
 
         <p className="text-sm text-blue-200 mt-8 font-medium">

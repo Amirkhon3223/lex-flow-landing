@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { LanguageSelector } from "../ui/language-selector";
+import { SupportModal } from "../SupportModal";
 import {useI18n} from "../../i18n/I18nContext.tsx";
 
 export function Footer() {
   const { t } = useI18n();
+  const [isSupportModalOpen, setIsSupportModalOpen] = useState(false);
 
   return (
     <footer className="py-16 bg-gray-950 text-gray-400">
@@ -11,7 +15,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
-                <img src="/src/assets/ROUNDED_LEXFLOW_BG.png" alt="LexFlow" className="w-10 h-10"/>
+                <img src="/ROUNDED_LEXFLOW_BG.png" alt="LexFlow" className="w-10 h-10"/>
               </div>
               <span className="text-white text-xl font-semibold">LexFlow</span>
             </div>
@@ -24,26 +28,34 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-base mb-4 font-semibold">Продукт</h4>
+            <h4 className="text-white text-base mb-4 font-semibold">{t("footer.product")}</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#features" className="hover:text-white transition-colors">{t("footer.features")}</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">{t("footer.pricing")}</a></li>
+              <li><a href="/#features" className="hover:text-white transition-colors">{t("footer.features")}</a></li>
+              <li><a href="/#how-it-works" className="hover:text-white transition-colors">{t("footer.howItWorks")}</a></li>
+              <li><a href="/#pricing" className="hover:text-white transition-colors">{t("footer.pricing")}</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white text-base mb-4 font-semibold">Компания</h4>
+            <h4 className="text-white text-base mb-4 font-semibold">{t("footer.company")}</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">{t("footer.blog")}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t("footer.support")}</a></li>
+              <li>
+                <button
+                  onClick={() => setIsSupportModalOpen(true)}
+                  className="hover:text-white transition-colors text-left"
+                >
+                  {t("footer.support")}
+                </button>
+              </li>
+              <li><a href="mailto:lexflow.team@gmail.com" className="hover:text-white transition-colors">lexflow.team@gmail.com</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white text-base mb-4 font-semibold">Юридическое</h4>
+            <h4 className="text-white text-base mb-4 font-semibold">{t("footer.legal")}</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
@@ -52,6 +64,11 @@ export function Footer() {
           <p>{t("footer.copyright")}</p>
         </div>
       </div>
+
+      <SupportModal
+        isOpen={isSupportModalOpen}
+        onClose={() => setIsSupportModalOpen(false)}
+      />
     </footer>
   );
 }
