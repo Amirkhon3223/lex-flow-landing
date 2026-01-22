@@ -109,7 +109,7 @@
     "proFeature3": "All AI features",
     "proFeature4": "AI document analysis",
     "proFeature5": "Case law database",
-    "proFeature6": "5 GB storage",
+    "proFeature6": "3 GB storage",
     "proMax": "Pro Max",
     "proMaxPrice": "$80",
     "proMaxPeriod": "/month",
@@ -120,7 +120,7 @@
     "proMaxFeature2": "Roles and permissions",
     "proMaxFeature3": "Team collaboration",
     "proMaxFeature4": "All Pro features for team",
-    "proMaxFeature5": "50 GB storage",
+    "proMaxFeature5": "18 GB storage",
     "proMaxFeature6": "Priority support"
   },
   "trust": {
