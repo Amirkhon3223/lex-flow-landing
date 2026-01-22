@@ -75,7 +75,7 @@
   "offers": {
     "@type": "AggregateOffer",
     "lowPrice": "7",
-    "highPrice": "70",
+    "highPrice": "80",
     "priceCurrency": "USD",
     "offerCount": "3"
   },

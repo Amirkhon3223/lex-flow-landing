@@ -32,7 +32,7 @@
 - ✅ Год основания: 2025
 - ✅ Контакты: support@lex-flow.com
 - ✅ Языки: Russian, English, Tajik
-- ✅ Цены: $7, $19, $70 (Basic, Pro, Pro Max)
+- ✅ Цены: $7, $20, $80 (Basic, Pro, Pro Max)
 - ✅ GitHub: https://github.com/Amirkhon3223/lex-flow-landing
 
 ### 2. SoftwareApplication Schema ✅
