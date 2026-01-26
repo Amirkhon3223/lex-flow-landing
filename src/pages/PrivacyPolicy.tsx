@@ -1,4 +1,4 @@
-import { ArrowLeft, Mail, Phone } from "lucide-react";
+import { ArrowLeft, Mail, Phone, Brain, Server, Shield, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -26,7 +26,7 @@ export function PrivacyPolicy() {
               Privacy Policy
             </h1>
             <p className="text-blue-100 text-lg">
-              Last updated: January 2026
+              Last updated: January 26, 2026
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export function PrivacyPolicy() {
             {/* Introduction */}
             <section>
               <p className="text-lg text-gray-700 leading-relaxed">
-                LexFlow ("LexFlow", "we", "our", "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.
+                LexFlow ("LexFlow", "we", "our", "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our legal practice management platform.
               </p>
               <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
                 <p className="text-gray-700 font-medium mb-3">If you have any questions, contact us at:</p>
@@ -73,19 +73,39 @@ export function PrivacyPolicy() {
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1">•</span>
-                      <span>Name</span>
+                      <span>Name, email address, phone number</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1">•</span>
-                      <span>Email address</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
-                      <span>Phone number</span>
+                      <span>Law firm information (name, country, city)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1">•</span>
                       <span>Account and workspace information</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Professional Data
+                  </h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1">•</span>
+                      <span>Client information you enter into the system</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1">•</span>
+                      <span>Case details and documents</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1">•</span>
+                      <span>Calendar events and meetings</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1">•</span>
+                      <span>Financial and billing information</span>
                     </li>
                   </ul>
                 </div>
@@ -97,87 +117,342 @@ export function PrivacyPolicy() {
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1">•</span>
-                      <span>IP address</span>
+                      <span>IP address, browser type, device information</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1">•</span>
-                      <span>Browser type and version</span>
+                      <span>Time zone, language preferences</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1">•</span>
-                      <span>Device information</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
-                      <span>Time zone and language</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-gray-50 rounded-xl p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Cookies & Similar Technologies
-                  </h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
-                      <span>Authentication cookies</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
-                      <span>Security cookies</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
-                      <span>Performance cookies</span>
+                      <span>Service usage analytics</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </section>
 
-            {/* 2. How We Use Your Information */}
+            {/* 2. AI Processing - IMPORTANT */}
+            <section className="border-t border-gray-200 pt-10">
+              <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-amber-100 rounded-xl">
+                    <Brain className="w-8 h-8 text-amber-600" />
+                  </div>
+                  <div>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                      2. AI and Automated Processing
+                    </h2>
+                    <p className="text-gray-700 text-lg mb-6">
+                      LexFlow uses artificial intelligence to enhance your experience:
+                    </p>
+                    <div className="space-y-4 mb-6">
+                      <div className="bg-white rounded-lg p-4">
+                        <h4 className="font-semibold text-gray-900 mb-2">AI Features:</h4>
+                        <ul className="space-y-2 text-gray-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 mt-1">•</span>
+                            <span>Document analysis and summarization</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 mt-1">•</span>
+                            <span>Legal assistant chat</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 mt-1">•</span>
+                            <span>Document version comparison</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 mt-1">•</span>
+                            <span>Intelligent recommendations</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="bg-white rounded-lg p-4">
+                        <h4 className="font-semibold text-gray-900 mb-2">AI Provider:</h4>
+                        <p className="text-gray-700 mb-2">
+                          We use <strong>Groq API</strong> (with Llama models) to process AI requests.
+                        </p>
+                        <ul className="space-y-2 text-gray-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 mt-1">✓</span>
+                            <span>Your data is NOT used to train AI models</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 mt-1">✓</span>
+                            <span>Data is transmitted via encrypted connection</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 mt-1">✓</span>
+                            <span>AI provider does not store your data after processing</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="bg-amber-100 rounded-lg p-4">
+                      <p className="text-amber-800 font-medium">
+                        <AlertTriangle className="w-5 h-5 inline mr-2" />
+                        You can use LexFlow without AI features. AI is optional.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 3. Data Storage Location */}
+            <section className="border-t border-gray-200 pt-10">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-blue-100 rounded-xl">
+                  <Server className="w-8 h-8 text-blue-600" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                    3. Data Storage Location
+                  </h2>
+                  <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-3">Server Location:</h4>
+                        <p className="text-gray-700 text-lg">
+                          <strong>Hetzner Data Center</strong><br />
+                          Helsinki, Finland 🇫🇮<br />
+                          European Union
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-3">This means:</h4>
+                        <ul className="space-y-2 text-gray-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 mt-1">✓</span>
+                            <span>GDPR compliant jurisdiction</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 mt-1">✓</span>
+                            <span>EU data protection laws apply</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 mt-1">✓</span>
+                            <span>Data does not leave EU</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 4. Attorney-Client Privilege */}
+            <section className="border-t border-gray-200 pt-10">
+              <div className="bg-purple-50 border-2 border-purple-200 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-purple-100 rounded-xl">
+                    <Shield className="w-8 h-8 text-purple-600" />
+                  </div>
+                  <div>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                      4. Attorney-Client Privilege Protection
+                    </h2>
+                    <p className="text-gray-700 text-lg mb-6">
+                      We understand the importance of attorney-client privilege:
+                    </p>
+                    <ul className="space-y-3 text-gray-700">
+                      <li className="flex items-start gap-3">
+                        <span className="text-purple-600 font-bold mt-1">✓</span>
+                        <span>All client data is isolated by workspace (multi-tenant architecture)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-purple-600 font-bold mt-1">✓</span>
+                        <span>We do NOT access your client data for any purpose except technical support (with your explicit permission)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-purple-600 font-bold mt-1">✓</span>
+                        <span>Documents and case information are encrypted at rest</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-purple-600 font-bold mt-1">✓</span>
+                        <span>You retain full ownership of all data you enter</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-purple-600 font-bold mt-1">✓</span>
+                        <span>We will never disclose your data to third parties except as required by law</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 5. Third-Party Services */}
             <section className="border-t border-gray-200 pt-10">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                2. How We Use Your Information
+                5. Third-Party Services
               </h2>
               <p className="text-gray-700 mb-6 text-lg">
-                We use your information to:
+                We use trusted third-party services:
               </p>
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+                  <h3 className="font-semibold text-gray-900 mb-2">Stripe</h3>
+                  <p className="text-gray-600 text-sm">Payment processing</p>
+                </div>
+                <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+                  <h3 className="font-semibold text-gray-900 mb-2">Groq</h3>
+                  <p className="text-gray-600 text-sm">AI processing (Llama models)</p>
+                </div>
+                <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+                  <h3 className="font-semibold text-gray-900 mb-2">Resend</h3>
+                  <p className="text-gray-600 text-sm">Email notifications</p>
+                </div>
+                <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+                  <h3 className="font-semibold text-gray-900 mb-2">Hetzner</h3>
+                  <p className="text-gray-600 text-sm">Hosting (Finland, EU)</p>
+                </div>
+              </div>
+              <p className="text-gray-600 mt-4">
+                These services process only the data necessary for their specific function.
+              </p>
+            </section>
+
+            {/* 6. Data Security */}
+            <section className="border-t border-gray-200 pt-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                6. Data Security
+              </h2>
+              <p className="text-gray-700 text-lg mb-6">
+                We implement industry-standard security measures:
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <span className="text-blue-600 font-bold mt-1">🔒</span>
+                  <span className="text-gray-700">HTTPS/TLS encryption in transit</span>
+                </div>
+                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <span className="text-blue-600 font-bold mt-1">🔐</span>
+                  <span className="text-gray-700">bcrypt password hashing</span>
+                </div>
+                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <span className="text-blue-600 font-bold mt-1">📱</span>
+                  <span className="text-gray-700">Two-factor authentication (2FA)</span>
+                </div>
+                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <span className="text-blue-600 font-bold mt-1">🛡️</span>
+                  <span className="text-gray-700">CSRF protection</span>
+                </div>
+                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <span className="text-blue-600 font-bold mt-1">🚫</span>
+                  <span className="text-gray-700">Rate limiting</span>
+                </div>
+                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <span className="text-blue-600 font-bold mt-1">💾</span>
+                  <span className="text-gray-700">Regular backups</span>
+                </div>
+              </div>
+            </section>
+
+            {/* 7. Data Retention */}
+            <section className="border-t border-gray-200 pt-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                7. Data Retention
+              </h2>
+              <p className="text-gray-700 text-lg mb-4">
+                We retain your data:
+              </p>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold mt-1">•</span>
+                  <span><strong>Account data:</strong> While your account is active + 30 days after deletion request</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold mt-1">•</span>
+                  <span><strong>Documents:</strong> Until you delete them or close your account</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold mt-1">•</span>
+                  <span><strong>Payment records:</strong> 7 years (legal requirement)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold mt-1">•</span>
+                  <span><strong>AI chat history:</strong> Until you delete it or close your account</span>
+                </li>
+              </ul>
+            </section>
+
+            {/* 8. Your Rights (GDPR) */}
+            <section className="border-t border-gray-200 pt-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                8. Your Rights (GDPR)
+              </h2>
+              <p className="text-gray-700 text-lg mb-6">
+                You have the right to:
+              </p>
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6">
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start gap-3">
-                    <span className="text-blue-600 font-bold mt-1">✓</span>
-                    <span>Provide and maintain LexFlow services</span>
+                    <span className="text-green-600 font-bold mt-1">✓</span>
+                    <span><strong>Access</strong> - Request a copy of your personal data</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-blue-600 font-bold mt-1">✓</span>
-                    <span>Authenticate users and secure accounts</span>
+                    <span className="text-green-600 font-bold mt-1">✓</span>
+                    <span><strong>Rectification</strong> - Correct inaccurate information</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-blue-600 font-bold mt-1">✓</span>
-                    <span>Process payments and subscriptions (via Stripe)</span>
+                    <span className="text-green-600 font-bold mt-1">✓</span>
+                    <span><strong>Erasure</strong> - Request deletion of your data ("right to be forgotten")</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-blue-600 font-bold mt-1">✓</span>
-                    <span>Improve platform performance and user experience</span>
+                    <span className="text-green-600 font-bold mt-1">✓</span>
+                    <span><strong>Portability</strong> - Export your data in a machine-readable format</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-blue-600 font-bold mt-1">✓</span>
-                    <span>Communicate with you regarding support or updates</span>
+                    <span className="text-green-600 font-bold mt-1">✓</span>
+                    <span><strong>Restriction</strong> - Limit how we process your data</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-blue-600 font-bold mt-1">✓</span>
-                    <span>Comply with legal obligations</span>
+                    <span className="text-green-600 font-bold mt-1">✓</span>
+                    <span><strong>Objection</strong> - Object to processing of your data</span>
+                  </li>
+                </ul>
+              </div>
+              <p className="text-gray-700 mt-6 text-lg">
+                To exercise your rights, contact{" "}
+                <a href="mailto:lexflow.team@gmail.com" className="text-blue-600 hover:underline font-medium">
+                  lexflow.team@gmail.com
+                </a>
+              </p>
+            </section>
+
+            {/* 9. Data Breach Notification */}
+            <section className="border-t border-gray-200 pt-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                9. Data Breach Notification
+              </h2>
+              <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
+                <p className="text-gray-700 text-lg mb-4">
+                  In the event of a data breach that affects your personal data:
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>We will notify affected users within 72 hours</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>We will notify relevant supervisory authorities as required by GDPR</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>We will provide information about the nature of the breach and steps taken</span>
                   </li>
                 </ul>
               </div>
             </section>
 
-            {/* 3. Cookies */}
+            {/* 10. Cookies */}
             <section className="border-t border-gray-200 pt-10">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                3. Cookies
+                10. Cookies
               </h2>
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
                 <p className="text-gray-700 mb-4 text-lg">
@@ -191,141 +466,33 @@ export function PrivacyPolicy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-600 mt-1">•</span>
+                    <span>Provide CSRF protection</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-600 mt-1">•</span>
                     <span>Cannot be disabled without affecting functionality</span>
                   </li>
                 </ul>
+                <p className="text-gray-700 mt-4">
+                  We do NOT use tracking or advertising cookies.
+                </p>
               </div>
             </section>
 
-            {/* 4. Third-Party Services */}
+            {/* 11. Changes to This Policy */}
             <section className="border-t border-gray-200 pt-10">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                4. Third-Party Services
-              </h2>
-              <p className="text-gray-700 mb-6 text-lg">
-                We use trusted third-party services:
-              </p>
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-                  <h3 className="font-semibold text-gray-900 mb-2">Stripe</h3>
-                  <p className="text-gray-600 text-sm">Payment processing</p>
-                </div>
-                <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-                  <h3 className="font-semibold text-gray-900 mb-2">Cloudflare</h3>
-                  <p className="text-gray-600 text-sm">Security, CDN, DDoS protection</p>
-                </div>
-                <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-                  <h3 className="font-semibold text-gray-900 mb-2">Infrastructure</h3>
-                  <p className="text-gray-600 text-sm">Hosting, storage</p>
-                </div>
-              </div>
-              <p className="text-gray-600 mt-4">
-                These services may process limited data necessary for their function.
-              </p>
-            </section>
-
-            {/* 5. Data Retention */}
-            <section className="border-t border-gray-200 pt-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                5. Data Retention
-              </h2>
-              <p className="text-gray-700 text-lg mb-4">
-                We retain your personal data:
-              </p>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-600 font-bold mt-1">•</span>
-                  <span>While your account is active</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-600 font-bold mt-1">•</span>
-                  <span>As required by law</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-600 font-bold mt-1">•</span>
-                  <span>Until you request deletion</span>
-                </li>
-              </ul>
-            </section>
-
-            {/* 6. Your Rights */}
-            <section className="border-t border-gray-200 pt-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                6. Your Rights
-              </h2>
-              <p className="text-gray-700 text-lg mb-6">
-                You have the right to:
-              </p>
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6">
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-600 font-bold mt-1">✓</span>
-                    <span>Access your personal data</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-600 font-bold mt-1">✓</span>
-                    <span>Correct inaccurate information</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-600 font-bold mt-1">✓</span>
-                    <span>Request deletion of your data</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-600 font-bold mt-1">✓</span>
-                    <span>Withdraw consent at any time</span>
-                  </li>
-                </ul>
-              </div>
-              <p className="text-gray-700 mt-6 text-lg">
-                To exercise your rights, contact{" "}
-                <a href="mailto:lexflow.team@gmail.com" className="text-blue-600 hover:underline font-medium">
-                  lexflow.team@gmail.com
-                </a>
-              </p>
-            </section>
-
-            {/* 7. Data Security */}
-            <section className="border-t border-gray-200 pt-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                7. Data Security
-              </h2>
-              <p className="text-gray-700 text-lg mb-6">
-                We implement industry-standard security measures:
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
-                  <span className="text-blue-600 font-bold mt-1">🔒</span>
-                  <span className="text-gray-700">HTTPS encryption</span>
-                </div>
-                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
-                  <span className="text-blue-600 font-bold mt-1">🍪</span>
-                  <span className="text-gray-700">Secure cookies</span>
-                </div>
-                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
-                  <span className="text-blue-600 font-bold mt-1">🔑</span>
-                  <span className="text-gray-700">Access controls</span>
-                </div>
-                <div className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
-                  <span className="text-blue-600 font-bold mt-1">📊</span>
-                  <span className="text-gray-700">Infrastructure security monitoring</span>
-                </div>
-              </div>
-            </section>
-
-            {/* 8. Changes to This Policy */}
-            <section className="border-t border-gray-200 pt-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                8. Changes to This Policy
+                11. Changes to This Policy
               </h2>
               <p className="text-gray-700 text-lg">
-                We may update this Privacy Policy periodically. Changes will be posted on this page with an updated date.
+                We may update this Privacy Policy periodically. Changes will be posted on this page with an updated date. For significant changes, we will notify you via email.
               </p>
             </section>
 
-            {/* 9. Contact Us */}
+            {/* 12. Contact Us */}
             <section className="border-t border-gray-200 pt-10">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                9. Contact Us
+                12. Contact Us
               </h2>
               <div className="bg-gradient-to-br from-blue-600 to-purple-600 text-white rounded-2xl p-8">
                 <p className="text-xl font-semibold mb-6">Get in touch with us:</p>
@@ -343,6 +510,9 @@ export function PrivacyPolicy() {
                     </a>
                   </div>
                 </div>
+                <p className="mt-6 text-blue-100">
+                  Data Controller: LexFlow Team
+                </p>
               </div>
             </section>
           </div>
